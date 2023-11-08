@@ -7,10 +7,11 @@ import { AppService } from 'src/@core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit{
+  delay: boolean = false;
   loadConfig: boolean = true;
 
   constructor(
-    private readonly appService: AppService,
+    private readonly appService: AppService
   ) {
 
   }
@@ -19,5 +20,9 @@ export class AppComponent implements OnInit{
     this.appService.bootstrap()
       .then(() => this.loadConfig = false)
       .catch(err => console.log(err, 'Bootstrap failed'));
+  }
+
+  get loaded(): boolean {
+    return !this.delay && !this.loadConfig;
   }
 }

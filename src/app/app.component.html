@@ -1,1 +1,10 @@
-<router-outlet></router-outlet>
+<div class="wrapper loading-page" *ngIf="delay; else main">
+  <div class="loading">
+    <img src="assets/images/loading.svg" alt="" style="position: absolute;">
+  </div>
+</div>
+<ng-template #main>
+  <router-outlet>
+    <app-spinner></app-spinner>
+  </router-outlet>
+</ng-template>

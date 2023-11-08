@@ -13,7 +13,7 @@ const routes: Routes = [
         pathMatch: 'full'
       },
       {
-        path: `branch`,
+        path: `home`,
         loadChildren: () => import('../branch/branch.module').then(m => m.BranchModule)
       },
     ]

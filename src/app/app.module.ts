@@ -13,10 +13,13 @@ import { ToastrModule } from 'ngx-toastr';
 import { CONFIG_TOKEN, CoreModule } from 'src/@core';
 import { environment } from 'src/environments/environment';
 import { MAT_DATE_LOCALE } from '@angular/material/core';
+import { NgxSpinnerModule } from 'ngx-spinner';
+import { SpinnerComponent } from './common/spinner/spinner.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SpinnerComponent
   ],
   imports: [
     CommonModule,
@@ -31,7 +34,8 @@ import { MAT_DATE_LOCALE } from '@angular/material/core';
     MatProgressSpinnerModule,
     NgSelectModule,
     MatIconModule,
-    ToastrModule.forRoot()
+    ToastrModule.forRoot(),
+    NgxSpinnerModule.forRoot({ type: 'ball-scale-multiple' })
   ],
   providers: [
     { provide: CONFIG_TOKEN, useValue: environment },

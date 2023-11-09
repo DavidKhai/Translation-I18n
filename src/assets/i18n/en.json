@@ -1,9 +1,10 @@
 {
-	"branch": {
-		"name": "57 National Highway 13, Ward 26, Binh Thanh District, HCM"
-	},
-	"home": {
-		"content": "This is a simple demonstration app translation Angular",
-		"name": "Home"
-	}
+  "branch": {
+    "name": "57 National Highway 13, Ward 26, Binh Thanh District, HCM"
+  },
+  "home": {
+    "content": "This is a simple demonstration app translation Angular",
+    "name": "Home Page",
+    "info": "Infomation summary"
+  }
 }

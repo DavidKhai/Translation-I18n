@@ -3,11 +3,12 @@
 
   .layout-container {
     background-color: #f8f8f8;
-    padding-top: 20px;
+    padding: 20px 30px;
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
     min-height: 100%;
+
     @media only screen and (max-width: 1023px) {
       padding-top: 150px;
     }

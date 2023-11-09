@@ -5,6 +5,7 @@
   "home": {
     "content": "This is a simple demonstration app translation Angular",
     "name": "Home Page",
-    "info": "Information summary"
+    "info": "Information summary",
+    "about": "Here at Staunton Farm, we undertake daily work to maintain and upkeep the farm – this includes caring for and feeding our animals, updating and transforming the site for our visitors and preserving the wonderful history of the Staunton Farm and Gardens estate."
   }
 }

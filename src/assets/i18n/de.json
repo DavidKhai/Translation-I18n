@@ -5,6 +5,7 @@
   "home": {
     "content": "Dies ist eine einfache Demonstration der Angular-App-Übersetzung",
     "name": "Startseite",
-    "info": "Informationszusammenfassung"
+    "info": "Informationszusammenfassung",
+    "about": "Hier auf der Staunton Farm unternehmen wir tägliche Arbeiten zur Pflege und Instandhaltung der Farm – dazu gehört die Pflege und Fütterung unserer Tiere, die Modernisierung und Umgestaltung des Geländes für unsere Besucher und die Bewahrung der wunderbaren Geschichte des Staunton Farm and Gardens-Anwesens."
   }
 }

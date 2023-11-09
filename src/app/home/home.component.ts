@@ -41,6 +41,11 @@ export class HomeComponent implements OnInit{
         'id': 4,
         'code': 'thai',
         'name': 'ThaiLan'
+      },
+      {
+        'id': 5,
+        'code': 'cy',
+        'name': 'Wales'
       }
     ];
     this.languageDefault = this.storageService.get('languageDefault');

@@ -1,1 +1,27 @@
-<p>home works!</p>
+<div class="row mt-2">
+  <div class="col-md-2">
+    <mat-select placeholder="Language" class="w-100px" appearance="none" [(value)]= "languageDefault" (selectionChange)="changeLanguage($event)">
+      <mat-option *ngFor="let language of languages" [value]="language.code">
+        {{ language.name }}
+      </mat-option>
+    </mat-select>
+  </div>
+</div>
+
+
+<!-- <div class="home">{{ 'HomePage.title' | translate: {'name':'Khải'} }}</div> -->
+<div class="home">{{ 'home.name' | translate }}</div>
+<p class="content">{{ 'home.content' | translate }}</p>
+<p class="content">{{ 'jhf gldfgdkg' | translate }}</p>
+
+<!-- <div class="row mt-4">
+  <div class="col-md-2">
+    <mat-select placeholder="Language" class="w-100px" appearance="none" [(value)]= "languageDefault" (selectionChange)="changeLanguage($event)">
+      <mat-option *ngFor="let language of languages" [value]="language.code">
+        {{ language.code }}
+      </mat-option>
+    </mat-select>
+  </div>
+</div> -->
+
+<!-- <button (click)="nextBranch()">Branch</button> -->

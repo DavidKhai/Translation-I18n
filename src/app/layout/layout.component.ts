@@ -8,17 +8,11 @@ import { Router } from '@angular/router';
 })
 export class LayoutComponent implements OnInit{
 
-  constructor(
-    private router: Router
-  ) {
+  constructor() {
 
   }
 
   ngOnInit() {
 
-  }
-
-  nextBranch(){
-    this.router.navigate(['/branch']);
   }
 }

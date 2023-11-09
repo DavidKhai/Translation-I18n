@@ -15,6 +15,8 @@ import { environment } from 'src/environments/environment';
 import { MAT_DATE_LOCALE } from '@angular/material/core';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { SpinnerComponent } from './common/spinner/spinner.component';
+import { TranslateModule } from '@ngx-translate/core';
+
 
 @NgModule({
   declarations: [
@@ -35,7 +37,8 @@ import { SpinnerComponent } from './common/spinner/spinner.component';
     NgSelectModule,
     MatIconModule,
     ToastrModule.forRoot(),
-    NgxSpinnerModule.forRoot({ type: 'ball-scale-multiple' })
+    NgxSpinnerModule.forRoot({ type: 'ball-scale-multiple' }),
+    TranslateModule
   ],
   providers: [
     { provide: CONFIG_TOKEN, useValue: environment },

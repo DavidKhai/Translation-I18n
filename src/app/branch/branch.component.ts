@@ -17,7 +17,7 @@ export class BranchComponent implements OnInit{
   }
 
   ngOnInit() {
-    // this.getBranches();
+
   }
 
   getBranches() {

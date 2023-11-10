@@ -7,5 +7,22 @@
     "name": "Home Page",
     "info": "Information summary",
     "about": "Here at Staunton Farm, we undertake daily work to maintain and upkeep the farm – this includes caring for and feeding our animals, updating and transforming the site for our visitors and preserving the wonderful history of the Staunton Farm and Gardens estate."
+  },
+  "layout": {
+    "header": {
+      "homepage": "Home page",
+      "posts": "Posts",
+      "aboutUs": "About us",
+      "contact": "Contact",
+      "more": "More",
+      "language": "Language",
+      "languageEN": "English",
+      "languageDE": "Germany",
+      "languageVN": "Vietnamese",
+      "languageCY": "Wales",
+      "login": "Login",
+      "admin-name": "Khai Trinh",
+      "logout": "Logout"
+    }
   }
 }

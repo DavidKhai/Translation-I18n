@@ -7,5 +7,22 @@
     "name": "Tudalen Gartref",
     "info": "Crynodeb gwybodaeth",
     "about": "Yma yn Fferm Staunton, rydym yn gwneud gwaith dyddiol i gynnal a chadw’r fferm – mae hyn yn cynnwys gofalu am ein hanifeiliaid a’u bwydo, diweddaru a thrawsnewid y safle ar gyfer ein hymwelwyr a chadw hanes rhyfeddol ystâd Fferm a Gerddi Staunton."
+  },
+  "layout": {
+    "header": {
+      "homepage": "Tudalen gartref",
+      "posts": "Pyst",
+      "aboutUs": "Amdanom ni",
+      "contact": "Cysylltwch",
+      "more": "Mwy",
+      "language": "Iaith",
+      "languageEN": "Saesneg",
+      "languageDE": "Almaen",
+      "languageVN": "Fietnameg",
+      "languageCY": "Cymru",
+      "login": "Mewngofnodi",
+      "admin-name": "Khai Trinh",
+      "logout": "Allgofnodi"
+    }
   }
 }

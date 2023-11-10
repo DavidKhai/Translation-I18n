@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { PaginationBranchRequest, Branch, BranchService } from 'src/@core';
 
 @Component({
-  selector: 'app-branch',
+  selector: 'branch',
   templateUrl: './branch.component.html',
   styleUrls: ['./branch.component.scss']
 })

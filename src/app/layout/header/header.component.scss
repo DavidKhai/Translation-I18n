@@ -1,0 +1,143 @@
+::ng-deep .custom-select-language{
+
+  &.cdk-overlay-pane{
+    width: auto !important;
+  }
+
+  .mat-mdc-option.mat-mdc-option-active .mat-pseudo-checkbox-minimal {
+    display: none !important;
+  }
+
+  .mat-mdc-option .mdc-list-item__primary-text {
+    font-weight: 600 !important;
+    font-family: 'Montserrat', sans-serif;
+  }
+}
+
+:host {
+  font-family: 'Montserrat', sans-serif;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      width: 40px;
+    }
+
+    .menu {
+      width: 80%;
+
+      ul {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        margin-bottom: 0;
+
+        li {
+          text-decoration: none;
+          list-style-type: none;
+          margin-right: 30px;
+          cursor: pointer;
+          transition: 0.4s;
+          transform: scale(1);
+
+          &:hover {
+            font-weight: 600;
+            transform: scale(1.05);
+          }
+
+          &.isActiveHome, &.isActivePosts, &.isActiveAboutUs, &.isActiveContact, &.isActiveMore {
+            font-weight: 600;
+            color: red;
+          }
+        }
+      }
+    }
+
+    .language {
+      width: 15%;
+      max-width: 150px;
+
+      ::ng-deep .mat-mdc-select-value-text {
+        font-family: 'Montserrat', sans-serif;
+      }
+
+      ::ng-deep .mat-mdc-option .mdc-list-item__primary-text {
+        font-family: 'Montserrat', sans-serif;
+      }
+
+    }
+
+    .auth {
+      width: 15%;
+      display: inline-block;
+
+      .login {
+        border: 1px solid var(--main-color);
+        padding: 7px 15px;
+        border-radius: 5px;
+        margin-left: 20px;
+        text-align: center;
+        cursor: pointer;
+        transition: 0.4s;
+
+        &:hover {
+          background: var(--main-color);
+          color: #ffffff;
+        }
+      }
+
+      .user {
+        padding: 0 20px;
+        cursor: pointer;
+        position: relative;
+
+        &:hover .box-info{
+          visibility: visible;
+          opacity: 1;
+        }
+
+        .box-user {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .user-image {
+            width: 30px;
+
+            img {
+              border-radius: 50%;
+            }
+          }
+
+          .name {
+            width: calc(100% - 40px);
+          }
+        }
+
+        .box-info {
+          width: calc(100% - 40px);
+          position: absolute;
+          bottom: -45px;
+          left: 20px;
+          background: #b99595f7;
+          padding: 10px;
+          visibility: hidden;
+          opacity: 0;
+
+          ul {
+            margin-bottom: 0;
+            padding-left: 0;
+
+            li {
+              text-decoration: none;
+              list-style-type: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

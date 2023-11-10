@@ -7,5 +7,22 @@
     "name": "Trang chủ",
     "info": "Tóm tắt thông tin",
     "about": "Tại Trang trại Staunton, chúng tôi đảm nhận công việc hàng ngày để duy trì và bảo trì trang trại - điều này bao gồm chăm sóc và cho động vật ăn, cập nhật và chuyển đổi địa điểm cho du khách cũng như bảo tồn lịch sử tuyệt vời của khu đất Trang trại và Vườn Staunton."
+  },
+  "layout": {
+    "header": {
+      "homepage": "Trang chủ",
+      "posts": "Bài viết",
+      "aboutUs": "Về chúng tôi",
+      "contact": "Liên hệ",
+      "more": "Xem thêm",
+      "language": "Ngôn ngữ",
+      "languageEN": "Tiếng Anh",
+      "languageDE": "Tiếng Đức",
+      "languageVN": "Tiếng Việt",
+      "languageCY": "Xứ Wales",
+      "login": "Đăng nhập",
+      "admin-name": "Khải Trịnh",
+      "logout": "Đăng xuất"
+    }
   }
 }

@@ -2,8 +2,8 @@
   font-family: 'Montserrat', sans-serif;
 
   .layout-container {
-    background-color: #f8f8f8;
-    padding: 20px 30px;
+    background-color: #ffffff;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
@@ -21,7 +21,8 @@
     margin-top: auto;
   }
   .body-container {
-    padding: 0;
+    padding: 20px 40px;
+
     .col-12 {
       padding: 0;
     }

@@ -24,5 +24,33 @@
       "admin-name": "Khai Trinh",
       "logout": "Ausloggen"
     }
+  },
+  "auth": {
+    "title": {
+      "signUp": "Benutzerkonto erstellen",
+      "login": "Anmelden"
+    },
+    "signUp": {
+      "note": "oder nutzen Sie Ihre E-Mail-Adresse zur Registrierung",
+      "name": "Name",
+      "email": "Email",
+      "password": "Passwort",
+      "btn": "Melden Sie sich an"
+    },
+    "login": {
+      "email": "Email",
+      "password": "Passwort",
+      "btn": "Anmelden",
+      "forget-password": "Passwort vergessen?",
+      "use-email": "oder verwenden Sie Ihr E-Mail-Passwort"
+    },
+    "info": {
+      "title": "Willkommen zurück!",
+      "content": "Geben Sie Ihre persönlichen Daten ein, um alle Funktionen der Website zu nutzen",
+      "btn": "Anmelden",
+      "title2": "Hallo Freund!",
+      "content2": "Registrieren Sie sich mit Ihren persönlichen Daten, um alle Funktionen der Website zu nutzen",
+      "btn2": "Melden Sie sich an"
+    }
   }
 }

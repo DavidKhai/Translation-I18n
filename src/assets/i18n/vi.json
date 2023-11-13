@@ -24,5 +24,33 @@
       "admin-name": "Khải Trịnh",
       "logout": "Đăng xuất"
     }
+  },
+  "auth": {
+    "title": {
+      "signUp": "Tạo tài khoản",
+      "login": "Đăng nhập"
+    },
+    "signUp": {
+      "note": "hoặc sử dụng email của bạn để đăng ký",
+      "name": "Tên",
+      "email": "E-mail",
+      "password": "Mật khẩu",
+      "btn": "Đăng ký"
+    },
+    "login": {
+      "email": "E-mail",
+      "password": "Mật khẩu",
+      "btn": "Đăng nhập",
+      "forget-password": "Quên mật khẩu của bạn?",
+      "use-email": "hoặc sử dụng mật khẩu email của bạn"
+    },
+    "info": {
+      "title": "Chào mừng trở lại!",
+      "content": "Nhập thông tin cá nhân của bạn để sử dụng tất cả các tính năng của trang web",
+      "btn": "Đăng nhập",
+      "title2": "Chào bạn!",
+      "content2": "Đăng ký với thông tin cá nhân của bạn để sử dụng tất cả các tính năng của trang web",
+      "btn2": "Đăng ký"
+    }
   }
 }

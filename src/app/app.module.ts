@@ -21,7 +21,7 @@ import { TranslateModule } from '@ngx-translate/core';
 @NgModule({
   declarations: [
     AppComponent,
-    SpinnerComponent
+    SpinnerComponent,
   ],
   imports: [
     CommonModule,

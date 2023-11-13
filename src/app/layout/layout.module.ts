@@ -8,6 +8,9 @@ import { TranslateModule } from '@ngx-translate/core';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactComponent } from './contact/contact.component';
 import { MoreComponent } from './more/more.component';
+import { MatDialogModule, MatDialogRef } from "@angular/material/dialog";
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AuthModule } from '../auth/auth.module';
 
 
 @NgModule({
@@ -20,9 +23,16 @@ import { MoreComponent } from './more/more.component';
   ],
   imports: [
     CommonModule,
+    ReactiveFormsModule,
     LayoutRoutingModule,
     MatSelectModule,
-    TranslateModule
-  ]
+    TranslateModule,
+    MatDialogModule,
+    FormsModule,
+    AuthModule
+  ],
+  providers: [
+    { provide: MatDialogRef, useValue: {} },
+  ],
 })
 export class LayoutModule { }

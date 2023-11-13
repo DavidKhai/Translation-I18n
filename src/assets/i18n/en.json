@@ -24,5 +24,33 @@
       "admin-name": "Khai Trinh",
       "logout": "Logout"
     }
+  },
+  "auth": {
+    "title": {
+      "signUp": "Create Account",
+      "login": "Sign In"
+    },
+    "signUp": {
+      "note": "or use your email for registeration",
+      "name": "Name",
+      "email": "Email",
+      "password": "Password",
+      "btn": "Sign Up"
+    },
+    "login": {
+      "email": "Email",
+      "password": "Password",
+      "btn": "Sign In",
+      "forget-password": "Forget Your Password?",
+      "use-email": "or use your email password"
+    },
+    "info": {
+      "title": "Welcome Back!",
+      "content": "Enter your personal details to use all of site features",
+      "btn": "Sign In",
+      "title2": "Hello, Friend!",
+      "content2": "Register with your personal details to use all of site features",
+      "btn2": "Sign Up"
+    }
   }
 }

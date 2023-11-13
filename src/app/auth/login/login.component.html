@@ -1,0 +1,48 @@
+<div class="container" [class.active]="isActive">
+  <div class="form-container sign-up">
+      <form [formGroup]="formRegister">
+          <h1>{{ 'auth.title.signUp' | translate }}</h1>
+          <div class="social-icons">
+              <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+              <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+              <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+          <span>{{ 'auth.signUp.note' | translate }}</span>
+          <input formControlName="name" type="text" placeholder="{{ 'auth.signUp.name' | translate }}">
+          <input formControlName="email" type="email" placeholder="{{ 'auth.signUp.email' | translate }}">
+          <input formControlName="password" type="password" placeholder="{{ 'auth.signUp.password' | translate }}">
+          <button [disabled]="formRegister.invalid" (click)="handleRegister()">{{ 'auth.signUp.btn' | translate }}</button>
+      </form>
+  </div>
+  <div class="form-container sign-in">
+      <form [formGroup]="formLogin">
+          <h1>{{ 'auth.title.login' | translate }}</h1>
+          <div class="social-icons">
+              <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+              <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+              <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+          <span>{{ 'auth.login.use-email' | translate }}</span>
+          <input formControlName="email" type="email" placeholder="{{ 'auth.login.email' | translate }}">
+          <input formControlName="password" type="password" placeholder="{{ 'auth.login.password' | translate }}">
+          <a href="#">{{ 'auth.login.forget-password' | translate }}</a>
+          <button [disabled]="formLogin.invalid" (click)="handleSignIn()"> {{ 'auth.login.btn' | translate }}</button>
+      </form>
+  </div>
+  <div class="toggle-container">
+      <div class="toggle">
+          <div class="toggle-panel toggle-left">
+              <h1>{{ 'auth.info.title' | translate }}</h1>
+              <p>{{ 'auth.info.content' | translate }}</p>
+              <button class="hidden" (click)="login()">{{ 'auth.info.btn' | translate }}</button>
+          </div>
+          <div class="toggle-panel toggle-right">
+              <h1>{{ 'auth.info.title2' | translate }}</h1>
+              <p>{{ 'auth.info.content2' | translate }}</p>
+              <button class="hidden" (click)="register()">{{ 'auth.info.btn2' | translate }}</button>
+          </div>
+      </div>
+  </div>
+</div>

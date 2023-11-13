@@ -26,7 +26,8 @@
         <div class="user-image">
           <img src="assets/images/avatar.png" alt="" width="30" height="30" class="img-fluid">
         </div>
-        <span class="name">{{ 'layout.header.admin-name' | translate }}</span>
+        <span class="name" *ngIf="userInfo">{{ userInfo?.email }}</span>
+        <span class="name" *ngIf="!userInfo" >{{ 'layout.header.admin-name' | translate }}</span>
       </div>
       <div class="box-info">
         <ul>

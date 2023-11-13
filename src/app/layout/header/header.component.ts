@@ -1,10 +1,13 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { MAT_SELECT_CONFIG } from '@angular/material/select';
 import { NavigationStart, Router, RouterEvent } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { filter, map, pluck } from 'rxjs';
 import { LocalStorageService } from 'src/@core';
 import { Language } from 'src/@core/models/language';
+import { AuthComponent } from 'src/app/auth/auth.component';
+import { LoginComponent } from 'src/app/auth/login/login.component';
 
 @Component({
   selector: 'header',
@@ -26,11 +29,13 @@ export class HeaderComponent implements OnInit{
   isActiveContact: boolean = false;
   isActiveMore: boolean = false;
   isUser: boolean = false;
+  userInfo: any;
 
   constructor(
     private router: Router,
     private translate: TranslateService,
-    private storageService: LocalStorageService
+    private storageService: LocalStorageService,
+    private _matDialog: MatDialog,
   ) {
     this.checkUrl();
   }
@@ -145,8 +150,20 @@ export class HeaderComponent implements OnInit{
   }
 
   login() {
-    this.isUser = true;
-    this.storageService.set('isUser', this.isUser);
+    this.openModal();
+  }
+
+  openModal() {
+    let dialog = this._matDialog.open(LoginComponent, {
+      panelClass: "d-container"
+    });
+    dialog.afterClosed().subscribe(res => {
+      if(res) {
+        this.isUser = true;
+        this.storageService.set('isUser', this.isUser);
+        this.userInfo = res;
+      }
+    })
   }
 
   logout() {

@@ -24,5 +24,33 @@
       "admin-name": "Khai Trinh",
       "logout": "Allgofnodi"
     }
+  },
+  "auth": {
+    "title": {
+      "signUp": "Creu cyfrif",
+      "login": "Mewngofnodi"
+    },
+    "signUp": {
+      "note": "neu defnyddiwch eich e-bost i gofrestru",
+      "name": "Enw",
+      "email": "Ebost",
+      "password": "Cyfrinair",
+      "btn": "Cofrestru"
+    },
+    "login": {
+      "email": "Ebost",
+      "password": "Cyfrinair",
+      "btn": "Mewngofnodi",
+      "forget-password": "Anghofio Eich Cyfrinair?",
+      "use-email": "neu defnyddiwch eich cyfrinair e-bost"
+    },
+    "info": {
+      "title": "Croeso nol!",
+      "content": "Rhowch eich manylion personol i ddefnyddio holl nodweddion y wefan",
+      "btn": "Mewngofnodi",
+      "title2": "Helo, Ffrind!",
+      "content2": "Cofrestrwch gyda'ch manylion personol i ddefnyddio holl nodweddion y wefan",
+      "btn2": "Cofrestru"
+    }
   }
 }

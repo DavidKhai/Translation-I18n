@@ -1,6 +1,12 @@
 <div class="row mt-2">
   <div class="col-md-2">
-    <mat-select placeholder="Language" class="w-100px" appearance="none" [(value)]= "languageDefault" (selectionChange)="changeLanguage($event)">
+    <mat-select
+      placeholder="Language"
+      class="w-100px"
+      appearance="none"
+      [(value)]="languageDefault"
+      (selectionChange)="changeLanguage($event)"
+    >
       <mat-option *ngFor="let language of languages" [value]="language.code">
         {{ language.name }}
       </mat-option>
@@ -8,10 +14,18 @@
   </div>
 </div>
 
-<div class="home">{{ 'home.name' | translate }}</div>
-<p class="content">{{ 'home.content' | translate }}</p>
-<p class="content">{{ 'home.info' | translate }}</p>
-<p class="content">{{ 'home.about' | translate }}</p>
+<!-- <apple-pay-button (click)="onApplePayButtonClicked()" buttonstyle="black" type="plain" locale="en-US"></apple-pay-button> -->
+<button
+  (click)="onApplePayButtonClicked()"
+  class="apple-pay-button apple-pay-button-black"
+>
+  <!-- Apple pay -->
+</button>
+
+<div class="home">{{ "home.name" | translate }}</div>
+<p class="content">{{ "home.content" | translate }}</p>
+<p class="content">{{ "home.info" | translate }}</p>
+<p class="content">{{ "home.about" | translate }}</p>
 
 <!-- <div class="row mt-4">
   <div class="col-md-2">
@@ -22,4 +36,3 @@
     </mat-select>
   </div>
 </div> -->
-

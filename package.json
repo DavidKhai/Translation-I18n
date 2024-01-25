@@ -6,7 +6,13 @@
     "start": "ng serve --o",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "build:lner": "ng build --configuration lner",
+    "build:tfw": "ng build --configuration tfw",
+    "build:production:lner": "ng build --configuration productionLner",
+    "start:lner": "ng serve -c lner --o",
+    "start:tfw": "ng serve -c tfw --o",
+    "start:productionLner": "ng serve -c productionLner --o"
   },
   "private": true,
   "dependencies": {

@@ -3,10 +3,11 @@ import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { LocalStorageService } from 'src/@core';
 import { Language } from 'src/@core/models/language';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-home',
-  templateUrl: './home.component.html',
+  templateUrl: `./${environment.clientName}-home.component.html`,
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {

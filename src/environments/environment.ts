@@ -3,8 +3,10 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  code: "my_app_uat",
-  production: true
+  code: 'my_app_uat',
+  production: false,
+  clientName: 'default',
+  apiUrl: '<your-api-url-here>-default',
 };
 
 /*
